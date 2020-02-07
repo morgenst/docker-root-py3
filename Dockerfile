@@ -11,7 +11,7 @@ RUN cd /tmp \
 	-Dcxx14=ON \
 	-Dbuiltin_xrootd=ON \
 	-Dpython=ON \
- && cmake --build . -- -j8 \
+ && cmake --build . -- -j2 \
  && cmake --build . --target install \
  && rm -rf /tmp/* /usr/src/root
  
